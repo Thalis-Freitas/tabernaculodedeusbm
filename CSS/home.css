@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo-movel {
+    display: none;
+}
+
+body {
+    position: relative;
+}
+
+    #cabecalho {
+        position: fixed;
+        width: 100vw;
+        height: 60px;
+        color: #969696;
+    }
+
+        .logo {
+            position: absolute;
+            left: 10px;
+            top: 5px;
+        }
+
+        #menu {
+            position: fixed;
+            list-style-type: none;
+            height: 5px;
+            right: 0%;
+        }
+
+            .li-menu {
+                position: relative;
+                bottom: 1px;
+                display: inline-block;
+                width: 87px;
+                height: 50px;
+                padding-top: 10px;
+                text-align: center;
+                border-left: 1px solid #e5e5e5;
+                font-size: 1em;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+                .li-menu:hover {
+                    color: #ef8213;
+                    cursor: pointer;
+                    background-color: rgba(239, 130, 19, 0.5);
+                }
+
+            a:visited {
+                color: #969696;
+            }
+
+            #contato {
+                position: relative;
+                text-align: center;
+                width: 87px;
+                height: 60px;
+                padding: 10px;
+                padding-top: 30px;
+                bottom: 11px;
+                background-color: #ef8213;
+                color: white;
+            }
+
+                #contato:hover {
+                    color: #87490e;
+                    text-decoration: underline;
+                }
+
+
+    #main {
+        position: fixed;
+        top: 60px;
+        bottom: 0px;
+        width: 100%;
+    }
+
+        #conteudo {
+            width: 1200px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            text-align: center;
+            top: 10%;
+        }
+
+            .p {
+                position: relative;
+                display: inline;
+                color: #87490e;
+                font-size: 1.5em;
+                bottom: 25px;
+                font-style: italic;
+            }
+
+            
+            h1 {
+                line-height: 1;
+                position: relative;
+                color: white;
+                text-shadow: 4px 4px 10px black;
+                bottom: 20px;
+                font-size: 2em;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            #h1-tabernaculo {
+                font-size: 1.7em;
+
+            }
+
+            .p2 {
+                display: inline;
+                position: relative;
+                color: #87490e;
+                background-color: rgba(240, 130, 19, 0.3);
+                font-weight: 900;
+                font-size: 2em;
+                font-style: italic;
+                bottom: 10px;
+            }
+
+            button {
+                position: relative;
+                text-align: center;
+                width: 100px;
+                height: 45px;
+                padding: 5px;
+                background-color: #f08213;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 10px;
+                outline: 1px solid #969696;
+            }
+
+                button:hover {
+                    color: #87490e;
+                    outline: 1px solid #87490e;
+
+                }
+
+    .menu-inferior {
+        position: fixed;
+        bottom: -4px;
+    }
+
+        .li-footer {
+            display: block;
+            position: relative;
+            height: 50px;
+            width: 70px;
+            border: 1px solid #333333;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+
+            .li-footer:hover {
+                background-color: rgba(239, 130, 19, 0.2);
+            }
+
+            #instagram {
+                background-image: url(../imagens/icons8-instagram-32.png);
+            }
+
+
+            #facebook {
+                background-image: url(../imagens/icons8-facebook-32.png);
+            }
+
+            #radio {
+               background-image: url(../imagens/icons8-rádio-32.png);
+            }
+
+            #localizacao {
+                background-image: url(../imagens/icons8-localização-mundial-32.png);
+           }
+/* ajustes no tamanho do cabeçalho */
+    @media screen and (min-width: 1010px) {
+
+        .li-menu {
+            width: 160px;
+            padding-top: 30px;
+            bottom: 10px;
+        }
+
+    }
+/* ajustes no tamanho do cabeçalho */
+    @media screen and (min-width: 1090px) {
+        .li-menu {
+            width: 175px;
+        }
+    }
+/* ajustes para telas menores que 650px */
+    @media screen and (max-width: 650px) {
+        .logo {
+            display: none;
+        }
+
+        #menu {
+            left: 0;
+            position: fixed;
+            height: 20px;
+            right: 0;
+            top: 20px;
+        }
+
+            .li-menu {
+                bottom: 20px;
+                width: 50vw;
+                height: 30px;
+                box-sizing: border-box;
+                padding-top: 5px;
+                border: 1px solid #ecebeb;
+                font-size: 1em;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            #contato {
+                height: 30px;
+                padding-top: 5px;
+                width: 50vw;
+                margin: 0;
+                bottom: 20px;
+                background-color: #ef8213;
+                color: white;
+            }
+
+        #main {
+            top: 90px;
+        }
+
+            #conteudo {
+                top: 13%;
+            }
+
+                .p {
+                    font-size: 5vw;
+                }
+
+                h1 {
+                    font-size: 7vw;
+                }
+
+                #h1-tabernaculo {
+                    font-size: 7vw;
+                }
+
+                .p2 {
+                    font-size: 5vw;
+                }
+
+                button {
+                    text-decoration: underline;
+                }
+
+                
+        .menu-inferior {
+            right: 0;
+            bottom: -4px;
+        }
+
+            .li-footer {
+                display: inline-block;
+                width: 60px;
+                height: 35px;
+                border-color: hsl(0, 0%, 11%);
+            }
+
+            #logo-movel {
+                display: inline-block;
+                position: fixed;
+                bottom: 5px;
+                left: 8px;
+            }
+
+    }
+
+    /* ajustes para telas menores que 350px */
+    @media screen and (max-width: 330px) {
+        .li-menu {
+        font-size: 4.5vw;
+    }
+        .li-footer {
+            width: 48px;
+        }
+
+
+    } 
