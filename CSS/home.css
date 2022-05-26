@@ -177,6 +177,11 @@ body {
                background-image: url(../imagens/icons8-rádio-32.png);
             }
 
+            #radio-movel {
+                background-image: url(../imagens/icons8-rádio-32.png);
+                display: none;
+            }
+         
             #localizacao {
                 background-image: url(../imagens/icons8-localização-mundial-32.png);
            }
@@ -262,7 +267,7 @@ body {
                 
         .menu-inferior {
             right: 0;
-            bottom: -4px;
+            bottom: -3pxx;
         }
 
             .li-footer {
@@ -270,6 +275,14 @@ body {
                 width: 60px;
                 height: 35px;
                 border-color: hsl(0, 0%, 11%);
+            }
+
+            #radio {
+                display: none;
+            }
+
+            #radio-movel{
+                display: inline-block;
             }
 
             #logo-movel {
