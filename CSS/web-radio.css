@@ -50,6 +50,10 @@ body {
                     cursor: pointer;
                     background-color: rgba(239, 130, 19, 0.5);
                 }
+                
+            a{
+                color: #969696;
+            }
 
             a:visited {
                 color: #969696;
