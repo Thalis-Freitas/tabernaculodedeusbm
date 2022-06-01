@@ -72,9 +72,63 @@ body {
             }
 
                 #contato:hover {
-                    color: #87490e;
+                    color: rgb(135, 72, 13);
                     text-decoration: underline;
                 }
+
+                main{
+                    position: fixed;
+                    top: 60px;
+                    bottom: 0px;
+                    width: 100%;
+                    overflow: auto;
+                    margin-bottom: 52px;
+            }
+        
+        .menu-inferior {
+            position: fixed;
+            bottom: -3px;
+            margin: 0 25px;
+            padding: 0 1px;
+}
+    
+            .li-footer {
+                bottom: -2px;
+                display: inline-block;
+                position: relative;
+                height: 50px;
+                width: 70px;
+                border: 1px solid #c7c7c7;
+                background-repeat: no-repeat;
+                background-position: center;
+            
+            }
+    
+                .li-footer:hover {
+                    background-color: rgba(239, 130, 19, 0.7);
+                }
+    
+                #instagram {
+                    background-image: url(../imagens/icons8-instagram-32.png);
+                }
+    
+    
+                #facebook {
+                    background-image: url(../imagens/icons8-facebook-32.png);
+                }
+    
+                #radio {
+                   background-image: url(../imagens/icons8-rádio-32.png);
+                }
+    
+                #radio-movel {
+                    background-image: url(../imagens/icons8-rádio-32.png);
+                    display: none;
+                }
+             
+                #localizacao {
+                    background-image: url(../imagens/icons8-localização-mundial-32.png);
+               }
 
 /* ajustes no tamanho do cabeçalho */
 @media screen and (min-width: 1010px) {
@@ -91,6 +145,12 @@ body {
 @media screen and (min-width: 1090px) {
     .li-menu {
         width: 175px;
+    }
+    video{
+        width: 80vh;
+    }
+    #h-videos{
+        max-width: 60%;
     }
 }
 /* ajustes para telas menores que 650px */
@@ -127,13 +187,42 @@ body {
             background-color: #ef8213;
             color: white;
         }
+
+        main{
+            top: 90px;
+        }
+
+        #logo-movel {
+            margin: 0 25px;
+            display: inline-block;
+            position: fixed;
+            bottom: 5px;
+            right: 8px;
+
+        }
     }
-       /* ajustes para telas menores que 350px */
-       @media screen and (max-width: 330px) {
+    @media screen and (max-width: 450px) {
+        .li-footer {
+            width: 50px;
+        }
+
+
+
+    }
+
+
+     @media screen and (max-width: 330px) {
         .li-menu {
         font-size: 4.5vw;
     }
         .li-footer {
-            width: 48px;
+            width: 45px;
         }
     } 
+
+    @media screen and (max-width: 310px) {
+        .li-footer {
+            width: 35px;
+        }
+
+    }
