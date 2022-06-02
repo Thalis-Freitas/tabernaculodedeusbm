@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo-movel {
+    display: none;
+}
+
+body {
+    position: relative;
+}
+
+    #cabecalho {
+        position: fixed;
+        width: 100vw;
+        height: 60px;
+        color: #969696;
+    }
+
+        .logo {
+            position: absolute;
+            left: 10px;
+            top: 5px;
+        }
+
+        #menu {
+            position: fixed;
+            list-style-type: none;
+            height: 5px;
+            right: 0%;
+        }
+
+            .li-menu {
+                position: relative;
+                bottom: 2px;
+                display: inline-block;
+                width: 87px;
+                height: 50px;
+                padding-top: 10px;
+                text-align: center;
+                border-left: 1px solid #e5e5e5;
+                border-bottom: 1px solid #e5e5e5;;
+                font-size: 1em;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+                .li-menu:hover {
+                    color: #ef8213;
+                    cursor: pointer;
+                    background-color: rgba(239, 130, 19, 0.5);
+                }
+
+            a{
+                color: #969696;
+            }
+
+            a:visited {
+                color: #969696;
+            }
+
+            #contato {
+                position: relative;
+                text-align: center;
+                width: 87px;
+                height: 31px;
+                padding: 10px;
+                padding-top: 30px;
+                bottom: 11px;
+                background-color: #ef8213;
+                color: white;
+            }
+
+                #contato:hover {
+                    color: rgb(135, 72, 13);
+                    text-decoration: underline;
+                }
+
+                main{
+                    position: fixed;
+                    top: 60px;
+                    bottom: 0px;
+                    width: 100%;
+                    overflow: auto;
+                    margin-bottom: 52px;
+            }
+        
+            .card{
+                border: 1px solid #c7c7c7;
+                margin: 25px; 
+                padding: 8px;
+                line-height: 1.5em;
+            }
+        
+                h2{
+                    margin: 15px;
+                    font-family: 'Poppins', sans-serif;
+                    color: #ef8213;
+                    margin-bottom: 15px;
+                    letter-spacing: 2px;
+                    padding-top: 10px;
+                    text-align: center;
+                }
+                p{
+                    margin: 15px;
+                    font-size: 1.2em;
+                    font-family: 'Poppins', sans-serif;
+                    color: #181717;
+                    padding-bottom: 10px;
+                    text-align: justify;
+                }  
+
+        .imagens{
+            position: relative;
+            text-align: center;
+        }
+
+        .img{
+            margin: 5px;
+            max-width: 90vw;
+        }
+
+        .menu-inferior {
+            position: fixed;
+            bottom: -3px;
+            margin: 0 25px;
+            padding: 0 1px;
+}
+    
+            .li-footer {
+                bottom: -2px;
+                display: inline-block;
+                position: relative;
+                height: 50px;
+                width: 70px;
+                border: 1px solid #c7c7c7;
+                background-repeat: no-repeat;
+                background-position: center;
+            
+            }
+    
+                .li-footer:hover {
+                    background-color: rgba(239, 130, 19, 0.7);
+                }
+    
+                #instagram {
+                    background-image: url(../imagens/icons8-instagram-32.png);
+                }
+    
+    
+                #facebook {
+                    background-image: url(../imagens/icons8-facebook-32.png);
+                }
+    
+                #radio {
+                   background-image: url(../imagens/icons8-rádio-32.png);
+                }
+    
+                #radio-movel {
+                    background-image: url(../imagens/icons8-rádio-32.png);
+                    display: none;
+                }
+             
+                #localizacao {
+                    background-image: url(../imagens/icons8-localização-mundial-32.png);
+               }
+
+/* ajustes no tamanho do cabeçalho */
+@media screen and (min-width: 1010px) {
+
+    .li-menu {
+        width: 160px;
+        padding-top: 30px;
+        bottom: 10px;
+        height: 40px;
+    }
+
+    .img{
+        max-width: 90vh;
+    }
+
+    p{
+        max-width: 60%;
+        margin: auto;
+    }
+    
+}
+
+@media screen and (min-width: 1090px) {
+    .li-menu {
+        width: 175px;
+    }
+}
+@media screen and (max-width: 730px) {
+
+    .img{
+        width: 75vh;
+    }
+}
+
+/* ajustes para telas menores que 650px */
+@media screen and (max-width: 650px) {
+    .logo {
+        display: none;
+    }
+
+    #menu {
+        left: 0;
+        position: fixed;
+        height: 20px;
+        right: 0;
+        top: 20px;
+    }
+
+        .li-menu {
+            bottom: 20px;
+            width: 50vw;
+            height: 30px;
+            box-sizing: border-box;
+            padding-top: 5px;
+            border: 1px solid #ecebeb;
+            font-size: 1em;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #contato {
+            height: 30px;
+            padding-top: 5px;
+            width: 50vw;
+            margin: 0;
+            bottom: 20px;
+            background-color: #ef8213;
+            color: white;
+        }
+
+        main{
+            top: 90px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        #logo-movel {
+            margin: 0 25px;
+            display: inline-block;
+            position: fixed;
+            bottom: 5px;
+            right: 8px;
+
+        }
+
+        .img{
+            width: 75vw;
+        }
+
+    }
+    @media screen and (max-width: 450px) {
+        .li-footer {
+            width: 50px;
+        }
+    }
+
+
+     @media screen and (max-width: 330px) {
+        .li-menu {
+        font-size: 4.5vw;
+        }
+        .li-footer {
+            width: 45px;
+        }
+        h2{
+            font-size: 7vw;
+        }
+
+        #h2{
+            font-size: 4vw;
+        }
+
+        p{
+            margin: 2px;
+        }
+
+        .img{
+            width: 60vw;
+            margin-bottom: 25px;
+        }
+
+    } 
+
+    @media screen and (max-width: 310px) {
+        .li-footer {
+            width: 35px;
+        }
+
+    }

@@ -2,7 +2,7 @@
         margin: 0;
         padding: 0;
         position: relative;
-        background-color: #e5e5e5;
+        background-color: white;
     }
     .container{
         position: relative;
@@ -14,7 +14,6 @@
     .card{
         margin: 2.5px;
         display: inline-block;
-        border: 1px solid black;
         width: 400px;
         height: 270px;
         cursor: pointer;
@@ -22,7 +21,6 @@
         background-size: cover;
         background-position: center;
         filter: grayscale(0.6);
-        line-height: 50px;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.3em;
         color: white;
@@ -33,6 +31,24 @@
     .card:hover{
         filter: unset;
     }
+
+        a{
+        color: white;
+    }   
+
+    a:visited{
+        color: white;
+    }
+
+    p{
+        background-color: rgba(229, 229, 229, 0.7);
+        width: 85%;
+        text-align: center;
+        margin: 15px auto;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
 
 #formatura-teologia{
     background-image: url(../imagens/saiba-mais/formatura\ teologia.jpg);
@@ -63,5 +79,95 @@
     .container{
         top: 100px;
     }
+
+}
+
+@media screen and (min-width: 1229px){
+    .container{
+        top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 840px){
+    .container{
+        margin: 1.5vh auto;
+    }
+
+    .card{
+        box-sizing: border-box;
+        width: 45vw;
+        height: 31vh;
+        filter: unset;
+        position: relative;
+        font-size: 2.5vw;
+        color: white;
+        font-weight: 700;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    #web-radio{
+        background-image: url(../imagens/saiba-mais/radio-800.jpg);
+    }
+
+    #localizacao{
+        background-image: url(../imagens/saiba-mais/localizacao-800.jpg);
+    }
+
+    p{
+        margin: 0;
+        padding: 10px;
+        width: 40vw;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(229, 229, 229, 0.7);
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+#formatura-teologia{
+    background-image: url(../imagens/saiba-mais/formatura\ teologia-600.jpg);
+}
+
+#impacto-jovem{
+    background-image: url(../imagens/saiba-mais/impacto-jovem-600.jpg);
+}
+
+#localizacao{
+    background-image: url(../imagens/saiba-mais/localizacao-600.jpg);
+}
+
+#infantil{
+    background-image: url(../imagens/saiba-mais/infantil-600.jpg);
+}
+
+#acao-social{
+    background-image: url(../imagens/saiba-mais/acao-social-600.jpg);
+}
+
+
+#web-radio{
+    background-image: url(../imagens/saiba-mais/radio-600.jpg);
+}
+}
+@media screen and (max-width: 510px){
+
+    #web-radio{
+        background-image: url(../imagens/saiba-mais/radio-510.jpg);
+    }
+ 
+    .card{
+        font-size: 4vw;
+
+    }
+
+    p{
+        width: 80%;
+    }
+
 
 }
