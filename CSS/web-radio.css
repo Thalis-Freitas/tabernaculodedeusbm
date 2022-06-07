@@ -85,6 +85,76 @@ body {
                     margin-bottom: 52px;
             }
         
+            .card{
+                border: 1px solid #c7c7c7;
+                margin: 25px; 
+                padding: 8px;
+                line-height: 1.5em;
+            }
+        
+                h2{
+                    margin: 5px;
+                    font-family: 'Poppins', sans-serif;
+                    color: #ef8213;
+                    margin-bottom: 15px;
+                    letter-spacing: 2px;
+                    padding-top: 10px;
+                    text-align: center;
+                }
+                p{
+                    font-size: 1.2em;
+                    font-family: 'Poppins', sans-serif;
+                    color: #181717;
+                    padding-bottom: 10px;
+                    text-align: center;
+                    max-width: 650px;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }  
+
+                #area-radio{
+                    height: 250px;
+                    position: relative;
+                    max-width: 650px;
+                    margin: auto;
+                }
+
+                #texto-programas{
+                    position: absolute;
+                    top: 18px;
+                    right: 0;
+                    width: 50%;
+                }
+
+                .programa{
+                    border: 1px solid #009af7;
+                    padding: 10px;
+                    border-radius: 10px;
+                    margin-bottom: 15px;
+                }
+
+                #img-radio{
+                    height: 250px;
+                    width: 50%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0%;
+                    background-image: url(../imagens/web-radio/radio-800.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                .link-radio{
+                    outline: 1px solid #009af7;
+                    max-width: 650px;
+                    padding-top: 10px ;
+                    margin-top: 15px;
+                    border-radius: 10px;
+                }
+
         .menu-inferior {
             position: fixed;
             bottom: -3px;
@@ -141,16 +211,10 @@ body {
     }
 
 }
-/* ajustes no tamanho do cabeçalho */
+
 @media screen and (min-width: 1090px) {
     .li-menu {
         width: 175px;
-    }
-    video{
-        width: 80vh;
-    }
-    #h-videos{
-        max-width: 60%;
     }
 }
 /* ajustes para telas menores que 650px */
@@ -192,6 +256,35 @@ body {
             top: 90px;
         }
 
+        p{
+            text-align: center;
+        }
+
+        #area-radio{
+            height: 410px;
+            position: relative;
+            max-width: 450px;
+            margin: auto;
+        }
+
+        #texto-programas{
+            position: relative;
+            top: 240px;
+            right: 0;
+            width: 100%;
+        }
+
+        .programa{
+            padding: 10px;
+        }
+
+        #img-radio{
+            width: 100%;
+            position: relative;
+            top: -60px;
+            background-image: url(../imagens/web-radio/radio.jpg);
+        }
+
         #logo-movel {
             margin: 0 25px;
             display: inline-block;
@@ -200,24 +293,97 @@ body {
             right: 8px;
 
         }
+
     }
+
     @media screen and (max-width: 450px) {
         .li-footer {
             width: 50px;
         }
 
+        #area-radio{
+            height: 560px;
+        }
 
+        .programa{
+            top: 140px;
+        }
 
+        #img-radio{
+            margin: auto;
+            height: 350px;
+            width: 80%;
+            top: 30px;
+            background-image: url(../imagens/web-radio/radio-510.jpg);
+        }
     }
 
+    @media screen and (max-width: 430px) {
+        #area-radio{
+            height: 560px;
+        }
 
+        .programa{
+            top: 130px;
+        }
+
+        #img-radio{
+            height: 335px;
+            width: 80%;
+            top: 0px;
+        }
+    
+    }
+
+    @media screen and (max-width: 387px) {
+        #area-radio{
+            height: 555px;
+        }
+
+        .programa{
+            top: 90px;
+        }
+
+        #img-radio{
+            height: 335px;
+            width: 80%;
+            top: -60px;
+        }
+
+    }
      @media screen and (max-width: 330px) {
         .li-menu {
         font-size: 4.5vw;
-    }
+        }
         .li-footer {
             width: 45px;
         }
+        h2{
+            font-size: 7vw;
+        }
+
+        #h2{
+            font-size: 4vw;
+        }
+
+        p{
+            margin: 2px;
+        }
+
+        #area-radio{
+            height: 580px;
+        }
+
+        .programa{
+            top: 77px;
+        }
+
+        #img-radio{
+            height: 335px;
+            width: 80%;
+            top: -117px;
+        }
+
     } 
 
     @media screen and (max-width: 310px) {

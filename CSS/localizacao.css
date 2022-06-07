@@ -85,6 +85,35 @@ body {
                     margin-bottom: 52px;
             }
         
+            .card{
+                border: 1px solid #c7c7c7;
+                margin: 25px; 
+                padding: 8px;
+                line-height: 1.5em;
+            }
+        
+                h2{
+                    margin: 15px;
+                    font-family: 'Poppins', sans-serif;
+                    color: #ef8213;
+                    margin-bottom: 15px;
+                    letter-spacing: 2px;
+                    padding-top: 10px;
+                }
+                p{
+                    margin: 15px;
+                    font-size: 1.2em;
+                    font-family: 'Poppins', sans-serif;
+                    color: #181717;
+                    padding-bottom: 10px;
+                    text-align: justify;
+                }  
+
+                #maps{
+                    text-align: center;
+                    
+                }
+
         .menu-inferior {
             position: fixed;
             bottom: -3px;
@@ -141,16 +170,10 @@ body {
     }
 
 }
-/* ajustes no tamanho do cabeçalho */
+
 @media screen and (min-width: 1090px) {
     .li-menu {
         width: 175px;
-    }
-    video{
-        width: 80vh;
-    }
-    #h-videos{
-        max-width: 60%;
     }
 }
 /* ajustes para telas menores que 650px */
@@ -192,6 +215,14 @@ body {
             top: 90px;
         }
 
+        h2{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+
         #logo-movel {
             margin: 0 25px;
             display: inline-block;
@@ -205,18 +236,26 @@ body {
         .li-footer {
             width: 50px;
         }
-
-
-
     }
 
 
      @media screen and (max-width: 330px) {
         .li-menu {
         font-size: 4.5vw;
-    }
+        }
         .li-footer {
             width: 45px;
+        }
+        h2{
+            font-size: 7vw;
+        }
+
+        #h2{
+            font-size: 4vw;
+        }
+
+        p{
+            margin: 2px;
         }
     } 
 
