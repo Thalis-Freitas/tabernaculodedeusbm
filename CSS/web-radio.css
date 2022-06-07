@@ -155,6 +155,10 @@ body {
                     border-radius: 10px;
                 }
 
+                .fonte-azul{
+                    color: #009af7;
+                }
+
         .menu-inferior {
             position: fixed;
             bottom: -3px;
