@@ -99,6 +99,7 @@ body {
                     margin-bottom: 15px;
                     letter-spacing: 2px;
                     padding-top: 10px;
+                    text-align: center;
                 }
                 p{
                     margin: 15px;
@@ -213,10 +214,6 @@ body {
 
         main{
             top: 90px;
-        }
-
-        h2{
-            text-align: center;
         }
 
         p{
