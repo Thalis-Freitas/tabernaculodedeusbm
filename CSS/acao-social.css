@@ -191,6 +191,7 @@ body {
     #h-videos{
         max-width: 60%;
     }
+    
 }
 /* ajustes para telas menores que 650px */
 @media screen and (max-width: 650px) {
@@ -274,14 +275,9 @@ body {
             font-size: 7vw;
         }
 
-        #h2{
-            font-size: 4vw;
-        }
-
         p{
             margin: 2px;
         }
-
 
         .img{
             width: 60vw;
