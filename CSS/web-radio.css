@@ -90,6 +90,7 @@ body {
                 margin: 25px; 
                 padding: 8px;
                 line-height: 1.5em;
+                padding-bottom: 15px;
             }
         
                 h2{
@@ -101,17 +102,25 @@ body {
                     padding-top: 10px;
                     text-align: center;
                 }
+                h3{
+                    font-family: 'Poppins', sans-serif;
+                    color: #009af7;
+                    letter-spacing: 2px;
+                    text-align: center;
+                }
                 p{
                     font-size: 1.2em;
                     font-family: 'Poppins', sans-serif;
                     color: #181717;
                     padding-bottom: 10px;
+                    padding-top: 5px;
                     text-align: center;
                     max-width: 650px;
                     position: relative;
                     left: 50%;
                     transform: translateX(-50%);
                 }  
+
 
                 #area-radio{
                     height: 250px;
@@ -129,9 +138,8 @@ body {
 
                 .programa{
                     border: 1px solid #009af7;
-                    padding: 10px;
                     border-radius: 10px;
-                    margin-bottom: 15px;
+                    margin: 5px;
                 }
 
                 #img-radio{
@@ -150,7 +158,7 @@ body {
                 .link-radio{
                     outline: 1px solid #009af7;
                     max-width: 650px;
-                    padding-top: 10px ;
+                    padding: 10px 5px 0 5px ;
                     margin-top: 15px;
                     border-radius: 10px;
                 }
@@ -223,6 +231,10 @@ body {
 }
 /* ajustes para telas menores que 650px */
 @media screen and (max-width: 650px) {
+
+    .card{
+        padding-bottom: 60px;
+    }
     .logo {
         display: none;
     }
@@ -262,6 +274,7 @@ body {
 
         p{
             text-align: center;
+            padding-bottom: 5px;
         }
 
         #area-radio{
@@ -269,13 +282,19 @@ body {
             position: relative;
             max-width: 450px;
             margin: auto;
+            top: 20px;
         }
 
         #texto-programas{
             position: relative;
-            top: 240px;
+            top: 255px;
             right: 0;
             width: 100%;
+            padding-top: 0px;
+        }
+
+        h3{
+            position: relative;
         }
 
         .programa{
@@ -287,6 +306,11 @@ body {
             position: relative;
             top: -60px;
             background-image: url(../imagens/web-radio/radio.jpg);
+        }
+
+        #texto-site-app{
+            position: relative;
+            top: 45px;
         }
 
         #logo-movel {
@@ -301,6 +325,10 @@ body {
     }
 
     @media screen and (max-width: 450px) {
+        .card{
+            padding-bottom: 30px;
+        }
+
         .li-footer {
             width: 50px;
         }
@@ -309,49 +337,70 @@ body {
             height: 560px;
         }
 
-        .programa{
-            top: 140px;
+        #texto-programas{
+            top: 365px;
+        }
+
+        #texto-site-app{
+            top: 0;
         }
 
         #img-radio{
             margin: auto;
             height: 350px;
             width: 80%;
-            top: 30px;
+            top: -10px;
             background-image: url(../imagens/web-radio/radio-510.jpg);
         }
     }
 
     @media screen and (max-width: 430px) {
+        .card{
+            padding-bottom: 40px;
+        }
+        
         #area-radio{
+            top: -50px;
             height: 560px;
         }
 
-        .programa{
-            top: 130px;
+        #texto-programas{
+            top: 405px;
         }
 
         #img-radio{
             height: 335px;
             width: 80%;
-            top: 0px;
+            top: 20px;
+        }
+
+        #texto-site-app{
+            top: 20px;
         }
     
     }
 
     @media screen and (max-width: 387px) {
+        .card{
+            padding-bottom: 40px;
+        }
+
         #area-radio{
             height: 555px;
         }
 
-        .programa{
-            top: 90px;
+        #texto-programas{
+            top: 380px;
+        }
+
+        #texto-site-app{
+            top: 10px;
         }
 
         #img-radio{
             height: 335px;
             width: 80%;
-            top: -60px;
+            top: -5px;
         }
 
     }
@@ -374,25 +423,60 @@ body {
             margin: 2px;
         }
 
-        #area-radio{
-            height: 580px;
+        #texto-site-app{
+            top: 25px;
         }
 
-        .programa{
-            top: 77px;
+        #area-radio{
+            height: 580px;
         }
 
         #img-radio{
             height: 335px;
             width: 80%;
-            top: -117px;
+            top: -55px;
         }
 
     } 
 
     @media screen and (max-width: 310px) {
+
+        .card{
+            padding-bottom: 30px;
+        }
         .li-footer {
             width: 35px;
         }
 
+        #img-radio{
+            height: 335px;
+            width: 80%;
+            top: -70px;
+        }
+
+        #texto-programas{
+            top: 370px;
+        }
+
+        #texto-site-app{
+            top: 15px;
+        }
+
     }
+
+    @media screen and (max-width: 287px) {
+        .card{
+            padding-bottom: 80px;
+        }
+
+        #img-radio{
+            top: -115px;
+        }
+
+        #texto-site-app{
+            top: 65px;
+        }
+
+
+    }
+
