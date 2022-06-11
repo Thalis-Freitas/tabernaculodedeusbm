@@ -228,6 +228,14 @@ body {
             width: 75vw;
         }
 
+        #radio {
+            display: none;
+        }
+
+        #radio-movel{
+            display: inline-block;
+        }
+
     }
     @media screen and (max-width: 450px) {
         .li-footer {
