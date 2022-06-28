@@ -4,11 +4,36 @@
         position: relative;
         background-color: white;
     }
+
+    #convite-culto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #convite-culto video {
+        box-shadow: 2px 2px 20px #ef8213;
+    }
+
+
     .container{
         position: relative;
         margin: auto;
         text-align: center;
         max-width: 1500px;
+        margin-bottom: 5%;
+    }
+
+    h2{
+        font-family: 'Poppins', sans-serif;
+        background-color: rgba(239, 130, 19, 0.1);
+        width: 30%;
+        color: #ef8213;
+        letter-spacing: 2px;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 10px;
     }
 
     .card{
@@ -84,6 +109,14 @@
 }
 
 @media screen and (max-width: 840px){
+
+    #convite-culto video{
+        width: 50%;
+    }
+
+    h2{
+        width: 35%;
+    }
     .container{
         margin: 1.5vh auto;
     }
@@ -123,6 +156,10 @@
 
 @media screen and (max-width: 600px){
 
+    h2{
+        width: 70%;
+    }
+
 #formatura-teologia{
     background-image: url(../imagens/saiba-mais/formatura\ teologia-600.jpg);
 }
@@ -149,6 +186,10 @@
 }
 }
 @media screen and (max-width: 510px){
+
+    #convite-culto video{
+        width: 70%;
+    }
 
     #web-radio{
         background-image: url(../imagens/saiba-mais/radio-510.jpg);
