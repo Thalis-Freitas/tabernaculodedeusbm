@@ -5,13 +5,13 @@
         background-color: white;
     }
 
-    #convite-culto {
+    .convite {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #convite-culto video {
+    .convite video, img {
         box-shadow: 2px 2px 20px #ef8213;
     }
 
@@ -53,14 +53,41 @@
         text-shadow: 2px 2px 5px black;
     }
 
+    .convite img{
+        width: 80%;
+        max-width: 400px;
+    }
+
+    button {
+        height: 45px;
+        margin: 20px 0 5px 0;
+        background-color: #f08213;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        outline: 1px solid #969696;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        max-width: 80%;
+    }
+
+        button:hover {
+            color: #87490e;
+            outline: 1px solid #87490e;
+        }
+
     .card:hover{
         filter: unset;
     }
 
-        a{
+    a{
         color: white;
+        text-decoration: none;
     }   
 
+    a:hover{
+        color: #87490e;
+    }
     a:visited{
         color: white;
     }
@@ -110,7 +137,7 @@
 
 @media screen and (max-width: 840px){
 
-    #convite-culto video{
+    .convite video{
         width: 50%;
     }
 
@@ -187,7 +214,7 @@
 }
 @media screen and (max-width: 510px){
 
-    #convite-culto video{
+    .convite video{
         width: 70%;
     }
 
